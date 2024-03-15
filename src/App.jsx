@@ -1,7 +1,9 @@
 
 import './App.css'
 import CardContainer from './Component/CardContainer'
+import ListContainer from './Component/ListContainer'
 import Header from './Component/header'
+
 
 function App() {
 
@@ -19,11 +21,12 @@ function App() {
 
       </div>
       <div className='flex flex-col lg:flex-row '>
-      <div className='cardContainer flex-1 px-5 py-6 '>
+      <div className='cardContainer flex-1 lg:px-5 my-6 '>
         <CardContainer></CardContainer>
 
       </div>
-      <div className='ListConatainer w-4/12'>
+      <div className='ListConatainer lg:w-4/12 border-4 rounded-xl my-6'>
+      <ListContainer></ListContainer>
 
 
       </div>

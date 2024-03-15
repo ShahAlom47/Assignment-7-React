@@ -29,14 +29,12 @@ const DisplayCard = ({data}) => {
                             {
                                 ingredients.map((ing,idx)=>  <li key={idx}>{ing}</li>  )
                             }
-                          
-                           
                         </ul>
                     </div>
                     <hr />
                     <div className=" flex text-gray-500 font-semibold ">
-                        <p className="flex gap-2 items-center"><span><BiAlarm /></span> <span>30</span> minutes</p>
-                        <p className="flex gap-2 items-center"><span><AiOutlineFire /></span> <span>500</span> calores</p>
+                        <p className="flex gap-2 items-center"><span><BiAlarm /></span> <span>{preparing_time}</span> minutes</p>
+                        <p className="flex gap-2 items-center"><span><AiOutlineFire /></span> <span>{calories}</span> calores</p>
                        
                     </div>
                     <div className="card-actions mt-5 ">
