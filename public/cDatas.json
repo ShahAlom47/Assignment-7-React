@@ -1,0 +1,92 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Grilled Chicken with Soy Sauce",
+      "recipe_image": "https://plus.unsplash.com/premium_photo-1661419883163-bb4df1c10109?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "short_description": "Delicious grilled chicken marinated in soy sauce",
+      "ingredients": [
+        "550 g chicken",
+        "120 ml soy sauce",
+        "200 g basil leaves",
+        "400 g mushroom"
+      ],
+      "preparing_time": "30 min",
+      "calories": "320 calories"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Vegetable Stir-Fry",
+      "recipe_image": "https://plus.unsplash.com/premium_photo-1664472637341-3ec829d1f4df?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "short_description": "Healthy and flavorful vegetable stir-fry",
+      "ingredients": [
+       "150 g tofu",
+        "100 ml soy sauce",
+        "50 g sesame seeds"
+      ],
+      "preparing_time": "20 min",
+      "calories": "200 calories"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Pasta Carbonara",
+      "recipe_image": "https://images.unsplash.com/photo-1598866594230-a7c12756260f?q=80&w=1308&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "short_description": "Classic Italian pasta dish with creamy sauce",
+      "ingredients": [
+        "400 g spaghetti",
+        "200 g bacon",
+        "4 eggs",
+        "100 g Parmesan cheese",
+        "200 ml cream"
+      ],
+      "preparing_time": "25 min",
+      "calories": "450 calories"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Spinach and Feta Stuffed Chicken Breast",
+      "recipe_image": "https://plus.unsplash.com/premium_photo-1664391706755-0295b0897590?q=80&w=1461&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "short_description": "Juicy chicken breasts stuffed with spinach and feta cheese",
+      "ingredients": [
+        "4 chicken breasts",
+       
+        "2 cloves garlic",
+        "1 lemon",
+        "50 g breadcrumbs"
+      ],
+      "preparing_time": "35 min",
+      "calories": "380 calories"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Mango Salsa Salmon",
+      "recipe_image": "https://images.unsplash.com/photo-1606756790138-261d2b21cd75?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "short_description": "Flaky salmon topped with fresh mango salsa",
+      "ingredients": [
+        "4 salmon fillets",
+        "2 ripe mangoes",
+        "1 red onion",
+        "1 jalapeno pepper",
+        "1 lime",
+        "Fresh cilantro"
+      ],
+      "preparing_time": "25 min",
+      "calories": "300 calories"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Quinoa Salad with Roasted Vegetables",
+      "recipe_image": "https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "short_description": "Nutritious quinoa salad packed with roasted vegetables",
+      "ingredients": [
+        "1 cup quinoa",
+  
+        "50 g feta cheese",
+        "50 g almonds",
+        "Fresh herbs (parsley, basil)",
+        "Balsamic vinegar"
+      ],
+      "preparing_time": "30 min",
+      "calories": "280 calories"
+    }
+  ]
+  
