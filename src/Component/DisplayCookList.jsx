@@ -1,6 +1,6 @@
 
 import PropTypes from 'prop-types';
-const DisplayCookList = ({items,index}) => {
+const DisplayCookList = ({items,index,PreparingBtnHandel}) => {
     return (
         
         <tr className="bg-gray-300">
@@ -8,7 +8,7 @@ const DisplayCookList = ({items,index}) => {
         <td> {items.recipe_name} </td>
         <td>{items.preparing_time}</td>
         <tr>  {items.calories} </tr>
-        <td> <button className=" rounded-full px-7 py-1 hover:bg-[#4cc894cc] active:translate-x-1 bg-[#0BE58A] border-none font-bold">Preparing</button>
+        <td> <button onClick={()=>PreparingBtnHandel(items)} className=" rounded-full px-7 py-1 hover:bg-[#4cc894cc] active:translate-x-1 bg-[#0BE58A] border-none font-bold">Preparing</button>
         </td>
     </tr>
         

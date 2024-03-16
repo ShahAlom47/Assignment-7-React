@@ -8,18 +8,23 @@ import Header from './Component/header'
 
 function App() {
 const [cookList, setCookList]=useState([]);
+const [currenCook,setCurrentCook]=useState([]);
 
   const cookHandle =(data)=>{
 const chackData= cookList.some((id)=>id.recipe_id===data.recipe_id)
-if(!chackData){
-
-  setCookList([...cookList,data])
+if(!chackData){ setCookList([...cookList,data])}
 }
 
+const PreparingBtnHandel =(pData)=>{
+const removeData = cookList.filter(item=>item.recipe_id!==pData.recipe_id)
+setCookList(removeData)
+const AddData = cookList.filter(item=>item.recipe_id===pData.recipe_id)
+setCurrentCook([...currenCook,AddData])
 
+}
 
-  }
-console.log(cookList);
+console.log(currenCook);
+
 
   return (
     <>
@@ -39,8 +44,8 @@ console.log(cookList);
 
       </div>
       <div className='ListConatainer lg:w-4/12 border-4 rounded-xl my-6'>
-      <ListContainer cookList={cookList}></ListContainer>
-
+      <ListContainer cookList={cookList} currenCook={currenCook} PreparingBtnHandel={PreparingBtnHandel}></ListContainer>
+     
 
       </div>
       </div>
