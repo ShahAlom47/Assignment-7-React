@@ -1,8 +1,8 @@
 
 import PropTypes from 'prop-types';
-const DisplayCurrenCook = ({item, index,  setTOtalTimeCal}) => {
-    console.log(item);
-    setTOtalTimeCal(item[0]?.preparing_time,item[0]?.calories);
+const DisplayCurrenCook = ({item, index}) => {
+   
+    // setTOtalTimeCal(item[0]?.preparing_time,item[0]?.calories);
     return (
 
         <tr className="bg-gray-300">
@@ -21,6 +21,6 @@ export default DisplayCurrenCook;
 DisplayCurrenCook.propTypes = {
     item: PropTypes.array.isRequired,
     index: PropTypes.number.isRequired,
-    setTOtalTimeCal: PropTypes.func.isRequired,
+    // setTOtalTimeCal: PropTypes.func.isRequired,
  
 }

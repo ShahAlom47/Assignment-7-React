@@ -2,17 +2,12 @@
 import PropTypes from 'prop-types';
 import DisplayCookList from './DisplayCookList';
 import DisplayCurrenCook from './DisplayCurrenCook';
-import { useState } from 'react';
+// import { useEffect, useState } from 'react';
 
-const ListContainer = ({ cookList,currenCook, PreparingBtnHandel }) => {
-    const [totalTime , setTotalTime]=useState(0);
-    const [totalCal , setTotalCal]=useState(0);
+const ListContainer = ({ cookList, currenCook, PreparingBtnHandel }) => {
 
-    const  setTOtalTimeCal =(time,calori)=>{
-
-       setTotalCal(totalCal+calori);
-       setTotalTime(totalTime+time);
-    }
+let time =0;
+let calories=0;
     return (
         <div>
             <div className="   ">
@@ -59,21 +54,32 @@ const ListContainer = ({ cookList,currenCook, PreparingBtnHandel }) => {
                         </thead>
                         <tbody className="">
                             {
-                                currenCook.map((item, index) =>   <DisplayCurrenCook  setTOtalTimeCal={ setTOtalTimeCal} item={item} index={index} key={index}></DisplayCurrenCook> )
+                                currenCook.map((item, index) => {
+                                    const times=parseInt(item[0].preparing_time)
+                                    const Calori=parseInt(item[0].calories)
+                                    time=time+times;
+                                    calories=calories+Calori
+
+                                    return (
+                                        <DisplayCurrenCook item={item} index={index} key={index}>
+
+                                        </DisplayCurrenCook>)
+
+                                })
                             }
 
-                     
+
                         </tbody>
 
                     </table>
                 </div>
 
             </div>
-        <div className="totalContainer text-lg font-semibold  bg-slate-300 py-3 px-4 my-4 rounded-lg ">
+            <div className="totalContainer text-lg font-semibold  bg-slate-300 py-3 px-4 my-4 rounded-lg ">
 
-            <h1>Total Time : {totalTime} min</h1>
-            <h1>Total Calories = {totalCal} cal.</h1>
-        </div>
+                <h1>Total Time : {time } min</h1>
+                <h1>Total Calories = { calories} cal.</h1>
+            </div>
         </div>
     );
 };

@@ -4,6 +4,8 @@ import { AiOutlineFire } from "react-icons/ai";
 import PropTypes from 'prop-types';
 
 
+
+
 const DisplayCard = ({data , cookHandle}) => {
     const {recipe_image,recipe_name,short_description,ingredients,preparing_time,calories}=data;
 //   console.log(cookHandle);

@@ -20,5 +20,6 @@ export default DisplayCookList;
 DisplayCookList.propTypes = {
     items: PropTypes.object.isRequired,
     index: PropTypes.number.isRequired,
+    PreparingBtnHandel: PropTypes.func.isRequired,
   
 }
