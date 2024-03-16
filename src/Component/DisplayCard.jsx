@@ -4,8 +4,9 @@ import { AiOutlineFire } from "react-icons/ai";
 import PropTypes from 'prop-types';
 
 
-const DisplayCard = ({data}) => {
+const DisplayCard = ({data , cookHandle}) => {
     const {recipe_image,recipe_name,short_description,ingredients,preparing_time,calories}=data;
+//   console.log(cookHandle);
     return (
         <div>
             <div className="card  bg-base-100 shadow-xl border-4 h-full">
@@ -38,7 +39,7 @@ const DisplayCard = ({data}) => {
                        
                     </div>
                     <div className="card-actions mt-5 ">
-                    <button className="btn rounded-full px-7 bg-[#0BE58A] border-none font-bold">Want to Cook</button>
+                    <button onClick={()=>cookHandle(data)} className="btn rounded-full px-7 bg-[#0BE58A] border-none font-bold">Want to Cook</button>
           
                     </div>
                     </div>
@@ -51,5 +52,6 @@ const DisplayCard = ({data}) => {
 
 export default DisplayCard;
 DisplayCard.propTypes = {
-    data: PropTypes.object.isRequired
+    data: PropTypes.object.isRequired,
+   cookHandle : PropTypes.func.isRequired
 }

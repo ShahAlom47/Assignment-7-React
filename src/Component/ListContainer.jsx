@@ -1,11 +1,13 @@
 
+import PropTypes from 'prop-types';
+import DisplayCookList from './DisplayCookList';
 
-const ListContainer = () => {
+const ListContainer = ({cookList}) => {
     return (
         <div>
         <div className="   ">
             <div className="heading text-center w-8/12 mx-auto pb-3 border-b-4">
-                <h1 className="font-semibold text-xl">Want to cook: <span>0</span> </h1>
+                <h1 className="font-semibold text-xl">Want to cook: <span>{cookList.length}</span> </h1>
             </div>
             <div className="  ">
                 <table className="">
@@ -19,25 +21,10 @@ const ListContainer = () => {
                         </tr>
                     </thead>
                     <tbody className="my-4">
-                        <tr className="bg-gray-300">
-                            <td> 1 </td>
-                            <td> Chicken Caesar Salad  </td>
-                            <td> 20 minutes</td>
-                            <tr>  300 Caloris </tr>
-                            <td> <button className=" rounded-full px-7 py-1 hover:bg-[#4cc894cc] active:translate-x-1 bg-[#0BE58A] border-none font-bold">Preparing</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 2 </td>
-                            <td> Chicken Caesar Salad  </td>
-                            <td> 20 minutes</td>
-                            <tr>  300 Caloris </tr>
-                            <td> <button className=" rounded-full px-7 py-1 hover:bg-[#4cc894cc] active:translate-x-1 bg-[#0BE58A] border-none font-bold">Preparing</button>
-                            </td>
-                        </tr>
-
-                       
-                    </tbody>
+                        {
+                            cookList.map((items,index)=> <DisplayCookList index={index} items={items} key={index}></DisplayCookList>)
+                        }
+                   </tbody>
                   
                 </table>
             </div>
@@ -89,3 +76,7 @@ const ListContainer = () => {
 };
 
 export default ListContainer;
+ListContainer.propTypes = {
+    cookList: PropTypes.array.isRequired,
+  
+}

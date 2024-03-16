@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './App.css'
 import CardContainer from './Component/CardContainer'
 import ListContainer from './Component/ListContainer'
@@ -6,7 +7,19 @@ import Header from './Component/header'
 
 
 function App() {
+const [cookList, setCookList]=useState([]);
 
+  const cookHandle =(data)=>{
+const chackData= cookList.some((id)=>id.recipe_id===data.recipe_id)
+if(!chackData){
+
+  setCookList([...cookList,data])
+}
+
+
+
+  }
+console.log(cookList);
 
   return (
     <>
@@ -22,11 +35,11 @@ function App() {
       </div>
       <div className='flex flex-col lg:flex-row '>
       <div className='cardContainer flex-1 lg:px-5 my-6 '>
-        <CardContainer></CardContainer>
+        <CardContainer cookHandle={cookHandle}></CardContainer>
 
       </div>
       <div className='ListConatainer lg:w-4/12 border-4 rounded-xl my-6'>
-      <ListContainer></ListContainer>
+      <ListContainer cookList={cookList}></ListContainer>
 
 
       </div>
