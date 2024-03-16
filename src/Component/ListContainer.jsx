@@ -15,7 +15,7 @@ let calories=0;
                     <h1 className="font-semibold text-xl">Want to cook: <span>{cookList.length}</span> </h1>
                 </div>
                 <div className="  ">
-                    <table className="">
+                    <table className="w-full">
                         <thead>
                             <tr>
                                 <th>No</th>

@@ -5,7 +5,7 @@ const Navbar = () => {
         <>
 
             {/* ==== */}
-            <div className="navbar bg-base-100 my-10 ">
+            <div className="navbar bg-base-100 my-10  flex gap-5 flex-col lg:flex-row  items-start ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,7 +44,7 @@ const Navbar = () => {
 
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-4xl font-bold">Recipe Calories</a>
+                    <a className="btn btn-ghost text-3xl lg:text-4xl font-bold pl-0">Recipe Calories</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1  text-gray-500 font-semibold">
@@ -63,13 +63,13 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="navbar-end flex">
-                    <div className="flex gap-2">
-                        <div className="form-control">
+                <div className="lg:navbar-end flex ">
+                    <div className="flex gap-2 ">
+                        <div className="form-control ">
                             <input
                                 type="text"
                                 placeholder="Search"
-                                className="input   w-24 md:w-auto rounded-full bg-[#150B2B0D]"
+                                className="input    md:w-auto rounded-full bg-[#150B2B0D]"
                             />
                         </div>
                         <div className="dropdown dropdown-end">

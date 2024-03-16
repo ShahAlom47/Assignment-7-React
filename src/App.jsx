@@ -5,7 +5,7 @@ import CardContainer from './Component/CardContainer'
 import ListContainer from './Component/ListContainer'
 import Header from './Component/header'
 
-import React from 'react';
+
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -53,7 +53,7 @@ function App() {
           <div>
          
           </div>
-          <div className='ListConatainer lg:w-4/12 border-4 rounded-xl my-6'>
+          <div className='ListConatainer lg:w-4/12 border-4 rounded-xl py-7 lg:px-2 my-6'>
             <ToastContainer></ToastContainer>
 
             <ListContainer cookList={cookList} currenCook={currenCook} PreparingBtnHandel={PreparingBtnHandel}></ListContainer>
