@@ -5,11 +5,11 @@ const DisplayCurrenCook = ({item, index}) => {
     // setTOtalTimeCal(item[0]?.preparing_time,item[0]?.calories);
     return (
 
-        <tr className="bg-gray-300">
+        <tr className="">
             <td> {index+1} </td>
             <td> {item[0]?.recipe_name} </td>
             <td> {item[0]?.preparing_time} </td>
-            <tr>   {item[0]?.calories} </tr>
+            <td>   {item[0]?.calories} </td>
 
         </tr>
 

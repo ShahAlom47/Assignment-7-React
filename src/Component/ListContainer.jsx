@@ -2,6 +2,8 @@
 import PropTypes from 'prop-types';
 import DisplayCookList from './DisplayCookList';
 import DisplayCurrenCook from './DisplayCurrenCook';
+
+
 // import { useEffect, useState } from 'react';
 
 const ListContainer = ({ cookList, currenCook, PreparingBtnHandel }) => {
@@ -11,18 +13,18 @@ let calories=0;
     return (
         <div>
             <div className="   ">
-                <div className="heading text-center w-8/12 mx-auto pb-3 border-b-4">
-                    <h1 className="font-semibold text-xl">Want to cook: <span>{cookList.length}</span> </h1>
+                <div className="heading text-center w-10/12 mx-auto pb-3 border-b-4">
+                    <h1 className="font-semibold text-xl rounded-lg shadow-gray-700 shadow-lg py-4 text-gray-600 bg-gray-200">Want to cook: <span>{cookList.length}</span> </h1>
                 </div>
-                <div className="  ">
-                    <table className="w-full">
+                <div className=" tableContainer ">
+                    <table className="w-full text-gray-600 ">
                         <thead>
-                            <tr>
+                            <tr className='bg-slate-200 rounded-xl'>
                                 <th>No</th>
                                 <th>Name</th>
                                 <th>Time</th>
                                 <th>Calories</th>
-                                <th>     x</th>
+                                <th>     -</th>
                             </tr>
                         </thead>
                         <tbody className="my-4">
@@ -37,14 +39,14 @@ let calories=0;
             </div>
             <hr />
 
-            <div className=" mt-5 ">
-                <div className="heading text-center w-8/12 mx-auto pb-3 border-b-4">
-                    <h1 className="font-semibold text-xl">Currently cooking: <span>{currenCook.length}</span> </h1>
+            <div className=" mt-8 ">
+                <div className="heading text-center w-10/12 mx-auto pb-3 border-b-4">
+                    <h1 className="font-semibold text-xl rounded-lg shadow-gray-700 shadow-lg py-4 text-gray-600 bg-gray-200">Currently cooking: <span>{currenCook.length}</span> </h1>
                 </div>
-                <div className=" border-4 ">
-                    <table className="w-full text-start">
+                <div className=" border-4 mt-4 ">
+                    <table className="w-full text-start text-gray-600">
                         <thead className="text-start">
-                            <tr className="p-4">
+                            <tr className="p-4 bg-slate-200 rounded-xl">
                                 <th>No</th>
                                 <th>Name</th>
                                 <th>Time</th>

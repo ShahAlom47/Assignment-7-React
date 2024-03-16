@@ -53,7 +53,7 @@ function App() {
           <div>
          
           </div>
-          <div className='ListConatainer lg:w-4/12 border-4 rounded-xl py-7 lg:px-2 my-6'>
+          <div className='ListConatainer lg:w-4/12 border-4 rounded-xl py-7 px-2 my-6'>
             <ToastContainer></ToastContainer>
 
             <ListContainer cookList={cookList} currenCook={currenCook} PreparingBtnHandel={PreparingBtnHandel}></ListContainer>
