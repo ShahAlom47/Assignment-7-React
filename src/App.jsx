@@ -4,6 +4,7 @@ import './App.css'
 import CardContainer from './Component/CardContainer'
 import ListContainer from './Component/ListContainer'
 import Header from './Component/header'
+import Footer from './Component/Footer'
 
 
 
@@ -11,15 +12,16 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
 function App() {
   const [cookList, setCookList] = useState([]);
   const [currenCook, setCurrentCook] = useState([]);
 
   const cookHandle = (data) => {
-   
+
     const chackData = cookList.some((id) => id.recipe_id === data.recipe_id)
     if (!chackData) { setCookList([...cookList, data]) }
-    else{ toast("This item is already selected")}
+    else { toast("This item is already selected") }
   }
 
   const PreparingBtnHandel = (pData) => {
@@ -50,9 +52,7 @@ function App() {
             <CardContainer cookHandle={cookHandle}></CardContainer>
 
           </div>
-          <div>
-         
-          </div>
+
           <div className='ListConatainer lg:w-4/12 border-4 rounded-xl py-7 px-2 my-6'>
             <ToastContainer></ToastContainer>
 
@@ -63,6 +63,10 @@ function App() {
         </div>
 
       </main>
+      <footer>
+        <Footer></Footer>
+
+      </footer>
 
 
     </>

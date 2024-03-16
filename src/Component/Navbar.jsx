@@ -5,7 +5,7 @@ const Navbar = () => {
         <>
 
             {/* ==== */}
-            <div className="navbar bg-base-100 my-10  flex gap-5 flex-col lg:flex-row  items-start ">
+            <div className="navbar bg-base-100 my-10  flex gap-5 flex-col lg:flex-row  items-start sticky ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,18 +26,18 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-gray-500 font-semibold"
+                            className="menu menu-sm dropdown-content mt-3 z-[1] p-2  shadow bg-base-100 rounded-box w-52 text-gray-500 font-semibold"
                         >
                             <li>
                                 <a>Home</a>
                             </li>
                             <li>
-                                <a>Recipes</a>
+                            <a href="https://www.google.com/">Recipes</a>
                             </li>
                             <li>
                                 <a>About</a>
                             </li>
-                            <li>
+                            <li >
                                 <a>Search</a>
 
                             </li>
