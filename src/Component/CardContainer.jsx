@@ -24,7 +24,7 @@ const CardContainer = ({ cookHandle }) => {
     if(loading) return <div className="flex justify-center py-11"><span className="loading loading-spinner text-primary w-32"></span></div> 
 
     return (
-        <div id="recipes" className=" grid gap-5 grid-cols-1 lg:grid-cols-2 ">
+        <div  className=" grid gap-5 grid-cols-1 lg:grid-cols-2 ">
             {
                 datas.map(data => <DisplayCard key={data.recipe_id} data={data} cookHandle={cookHandle}></DisplayCard>)
             }

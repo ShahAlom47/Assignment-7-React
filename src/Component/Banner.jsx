@@ -3,6 +3,7 @@
 const Banner = () => {
     return (
         <div
+            id="banner"
             className="hero min-h-[600px] rounded-xl"
             style={{
                 // backgroundImage:

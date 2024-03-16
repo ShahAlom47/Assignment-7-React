@@ -5,7 +5,7 @@ const Navbar = () => {
         <>
 
             {/* ==== */}
-            <div className="navbar bg-base-100 my-10  flex gap-5 flex-col lg:flex-row  items-start sticky ">
+            <div className="navbar  bg-base-100 my-10  flex gap-5 flex-col lg:flex-row  items-start sticky top-0 z-[9999] ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,7 +32,7 @@ const Navbar = () => {
                                 <a>Home</a>
                             </li>
                             <li>
-                            <a href="https://www.google.com/">Recipes</a>
+                            <a href="#recipes">Recipes</a>
                             </li>
                             <li>
                                 <a>About</a>
@@ -49,10 +49,10 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1  text-gray-500 font-semibold">
                         <li>
-                            <a>Home</a>
+                            <a  href="banner">Home</a>
                         </li>
                         <li>
-                            <a>Recipes</a>
+                        <a href="#recipes">Recipes</a>
                         </li>
                         <li>
                             <a>About</a>
