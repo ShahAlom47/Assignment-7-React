@@ -19,12 +19,12 @@ let calories=0;
                 <div className=" tableContainer ">
                     <table className="w-full text-gray-600 ">
                         <thead>
-                            <tr className='bg-slate-200 rounded-xl'>
-                                <th>No</th>
-                                <th>Name</th>
-                                <th>Time</th>
-                                <th>Calories</th>
-                                <th>     -</th>
+                            <tr className='bg-slate-200 rounded-xl '>
+                                <th className='lg:py-3 lg:px-2'>No</th>
+                                <th className='lg:py-3 lg:px-2'>Name</th>
+                                <th className='lg:py-3 lg:px-2'>Time</th>
+                                <th className='lg:py-3 lg:px-2'>Calories</th>
+                                <th className='lg:py-3 lg:px-2'>     -</th>
                             </tr>
                         </thead>
                         <tbody className="my-4">
@@ -46,11 +46,11 @@ let calories=0;
                 <div className="  mt-4 ">
                     <table className="w-full text-start text-gray-600">
                         <thead className="text-start">
-                            <tr className="p-4 bg-slate-200 rounded-xl">
-                                <th>No</th>
-                                <th>Name</th>
-                                <th>Time</th>
-                                <th>Calories</th>
+                            <tr className="lg:p-4 bg-slate-200 rounded-xl">
+                                <th className='lg:py-3 lg:px-2'>No</th>
+                                <th className='lg:py-3 lg:px-2'>Name</th>
+                                <th className='lg:py-3 lg:px-2'>Time</th>
+                                <th className='lg:py-3 lg:px-2'>Calories</th>
 
                             </tr>
                         </thead>
