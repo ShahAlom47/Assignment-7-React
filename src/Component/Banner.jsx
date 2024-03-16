@@ -5,11 +5,13 @@ const Banner = () => {
         <div
             className="hero min-h-[600px] rounded-xl"
             style={{
+                // backgroundImage:
+                //     "url(https://i.ibb.co/dfC0LxX/Rectangle-1.jpg)"
                 backgroundImage:
-                    "url(https://i.ibb.co/dfC0LxX/Rectangle-1.jpg)"
+                    "url(https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }}
         >
-            <div className="hero-overlay bg-opacity-30 rounded-xl " />
+            <div className="hero-overlay bg-opacity-70 rounded-xl " />
             <div className="hero-content text-center text-neutral-content">
                 <div className="lg:w-8/12">
                     <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">Discover an exceptional cooking class tailored for you!</h1>

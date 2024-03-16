@@ -13,8 +13,8 @@ let calories=0;
     return (
         <div>
             <div className="   ">
-                <div className="heading text-center w-10/12 mx-auto pb-3 border-b-4">
-                    <h1 className="font-semibold text-xl rounded-lg shadow-gray-700 shadow-lg py-4 text-gray-600 bg-gray-200">Want to cook: <span>{cookList.length}</span> </h1>
+                <div className="heading text-center w-full mx-auto pb-3 border-b-4">
+                    <h1 className="font-semibold text-xl rounded-lg shadow-gray-700 shadow-lg py-3 text-gray-600 bg-gray-200">Want to cook: <span>{cookList.length}</span> </h1>
                 </div>
                 <div className=" tableContainer ">
                     <table className="w-full text-gray-600 ">
@@ -40,10 +40,10 @@ let calories=0;
             <hr />
 
             <div className=" mt-8 ">
-                <div className="heading text-center w-10/12 mx-auto pb-3 border-b-4">
-                    <h1 className="font-semibold text-xl rounded-lg shadow-gray-700 shadow-lg py-4 text-gray-600 bg-gray-200">Currently cooking: <span>{currenCook.length}</span> </h1>
+                <div className="heading text-center w-full mx-auto pb-3 border-b-4">
+                    <h1 className="font-semibold text-xl rounded-lg shadow-gray-700 shadow-lg py-3 text-gray-600 bg-gray-200">Currently cooking: <span>{currenCook.length}</span> </h1>
                 </div>
-                <div className=" border-4 mt-4 ">
+                <div className="  mt-4 ">
                     <table className="w-full text-start text-gray-600">
                         <thead className="text-start">
                             <tr className="p-4 bg-slate-200 rounded-xl">
