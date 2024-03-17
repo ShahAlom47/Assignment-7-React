@@ -24,7 +24,7 @@ let calories=0;
                                 <th className='lg:py-3 lg:px-2'>Name</th>
                                 <th className='lg:py-3 lg:px-2'>Time</th>
                                 <th className='lg:py-3 lg:px-2'>Calories</th>
-                                <th className='lg:py-3 lg:px-2'>     -</th>
+                                <th className='lg:py-3 lg:px-2 text-slate-200'>     -</th>
                             </tr>
                         </thead>
                         <tbody className="my-4">
